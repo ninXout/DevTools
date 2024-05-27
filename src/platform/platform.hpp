@@ -2,6 +2,9 @@
 
 #include <imgui.h>
 #include <imgui_internal.h>
+#ifdef GEODE_IS_MACOS
+    #include <OpenGL/gl.h>
+#endif
 
 ImRect& getGDWindowRect();
 bool& shouldPassEventsToGDButTransformed();
